@@ -27,13 +27,13 @@ let weatherCheck=async (cityName)=>{
    let imgM=document.getElementById("main-img");
 
    if(data.weather[0].main=="Clouds"){
-         imgM.outerHTML=`<img id="main-img" src="img/sunny-weather.png" alt="">`
+         imgM.outerHTML=`<img id="main-img" src="/img/sunny-weather.png" alt="">`
    }
    if(data.weather[0].main=="Rain"){
-    imgM.outerHTML=`<img id="main-img" src="img/raining.png" alt="">`
+    imgM.outerHTML=`<img id="main-img" src="/img/raining.png" alt="">`
    }
    if(data.weather[0].main=="Snow"){
-    imgM.outerHTML=`<img id="main-img" src="img/snow.png" alt="">`
+    imgM.outerHTML=`<img id="main-img" src="/img/snow.png" alt="">`
    }
     document.querySelector(".mainContainer").style.background=" lightblue"
    let one=document.querySelector(".details").style=`
